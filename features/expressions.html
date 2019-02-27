@@ -34,18 +34,18 @@ result1 = if foo exists then bar     # if the variable foo exists, then set resu
 <p>This lets you inspect a value with a list of predicates and expressions, and run the first one which matches.</p>
 
 <pre><code class="language-idml">result = match value
-| this &lt; 5  =&gt; "less than 5"
-| this &gt; 5  =&gt; "more than 5"
-| this == 5 =&gt; "five"
-| _ =&gt; "fallthrough"
+ this &lt; 5  =&gt; "less than 5"
+ this &gt; 5  =&gt; "more than 5"
+ this == 5 =&gt; "five"
+ _ =&gt; "fallthrough"
 </code></pre>
 
 <p>Of course it’s an expression so you can do something complex like this:</p>
 
 <pre><code class="language-idml">result = ("the answer is: " + match value
-| this &lt; 5 =&gt; "less than 5"
-| this &gt; 5 =&gt; "more than 5"
-| this == 5 =&gt; "five"
+ this &lt; 5 =&gt; "less than 5"
+ this &gt; 5 =&gt; "more than 5"
+ this == 5 =&gt; "five"
 ).capitalize()
 </code></pre>
 

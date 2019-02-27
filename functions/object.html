@@ -8,13 +8,13 @@
 
 <p>This function is called on an Object and returns a String containing a JSON serialized copy of the object</p>
 
-<pre><code class="language-idml:input">{}
+<pre><code class="language-json">{}
 </code></pre>
 
-<pre><code class="language-idml:code:inline">a.b = 1
-a.c = 2
+<pre><code class="language-idml">a.b = 1 # 1
+a.c = 2 # 2
 
-serialized = @a.serialize()
+serialized = @a.serialize() # "{\"b\":1,\"c\":2}"
 </code></pre>
 
 <h2 id="keys">keys</h2>
